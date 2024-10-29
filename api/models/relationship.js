@@ -38,3 +38,5 @@ Comment.belongsTo(Blog, {
     onDelete: "CASCADE",
     "onUpdate": "CASCADE"
 });
+
+module.exports = { User, Blog, Comment };
