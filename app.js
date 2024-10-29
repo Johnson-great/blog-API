@@ -1,6 +1,8 @@
 const express = require("express");
 const dotenv = require("dotenv");
 
+require("./api/models/modelsSync");
+
 // Loads the env variables
 dotenv.config();
 
