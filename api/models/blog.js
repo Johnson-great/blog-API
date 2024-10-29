@@ -45,15 +45,6 @@ Blog.init({
     ],
 });
 
-(async () => {
-    try {
-        await Blog.sync({ alter: true });
-        console.log("The table for the Blog model was just (re)created!");
-    } catch (error) {
-        console.error("Unable to synchronize models:", error);
-    }
-})();
-
 // `sequelize.define` also returns the model
 console.log(Blog === sequelize.models.Blog); // true
 
