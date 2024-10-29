@@ -49,18 +49,6 @@ User.init({
     ],
 });
 
-
-(async () => {
-    try {
-        await User.sync({ alter: true });
-        console.log("The table for the User model was just (re)created!");
-    } catch (error) {
-        console.error("Unable to synchronize models:", error);
-    }
-})();
-
-
-
 // `sequelize.define` also returns the model
 console.log(User === sequelize.models.User); // true
 
