@@ -1,7 +1,3 @@
-Here’s a README file for your blog API:
-
----
-
 # Blog API
 
 ## Overview
